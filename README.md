@@ -3,6 +3,11 @@ dispatchR
 
 Typescript - Event Dispatcher
 
+Requirements
+--------
+
+Q - Javascript Promise Librayr
+linq.js - LINQ for JavaScript
 
 Examples
 --------
@@ -19,7 +24,7 @@ public refresh(): void {
 }
 ```
 
-Async (requires QPromise):
+Async:
 ``` typescript
 import es = require("eventing/dispatchR");
 
