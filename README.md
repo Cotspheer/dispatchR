@@ -6,7 +6,8 @@ Typescript - Event Dispatcher
 Requirements
 --------
 
-Q - Javascript Promise Librayr
+Q - Javascript Promise Library
+
 linq.js - LINQ for JavaScript
 
 Examples
