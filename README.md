@@ -1,0 +1,4 @@
+dispatchR
+=========
+
+Typescript - Event Dispatcher
