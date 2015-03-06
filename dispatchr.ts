@@ -40,7 +40,7 @@ export class DispatchR implements IEventSystem {
         eventContainer.splice(eventContainer.indexOf(eventObject), 1);
     }
 
-    public emit(event: string, async: boolean = false): void {
+    public emit(event: string, async: boolean = false): Q.Promise<any> {
         var args: Array<any> = Array.apply([], arguments);
         args.shift();
         args.shift();
@@ -67,9 +67,11 @@ export class DispatchR implements IEventSystem {
             }));
         });
 
-        Q.all(promises).done();
+        var emitPromise = Q.all(promises);
 
-        return;
+        emitPromise.done();
+
+        return emitPromise;
     }
 }
 
