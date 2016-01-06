@@ -69,8 +69,6 @@ export class DispatchR implements IEventSystem {
 
         var emitPromise = Q.all(promises);
 
-        emitPromise.done();
-
         return emitPromise;
     }
 }
