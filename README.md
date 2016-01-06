@@ -58,7 +58,7 @@ public setUp(): void {
 
 ### Off
 
-Unsubscripe from an event:
+Unsubscribe from an event:
 
 ``` typescript
 import es = require("eventing/dispatchR");
